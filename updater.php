@@ -2,7 +2,7 @@
 
 /*
 Name: WP GitHub Updater Class
-Version: 2.1
+Version: 2.2
 Author: Louis Varley
 Author URI: http://www.landscapeinstitute.org
 */
