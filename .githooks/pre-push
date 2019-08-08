@@ -46,3 +46,7 @@ sed -i "5s/.*/$nVersion/" my-landscapeinstitute-api.php
 git add my-landscapeinstitute-api.php
 git commit -m "$version" -m "";
 
+composer update
+git add -A 
+git diff-index --cached --quiet HEAD || git commit -m "Composer Auto Commit Updates"
+

@@ -14,14 +14,12 @@ This does not use the in-build wordpress framework and instead merely inserts a 
 
 Add to your plugins main php file.
 
-`
-/* Include Composer */
-require(plugin_dir_path(__FILE__) . 'vendor/autoload.php');
 
-add_action('admin_init',function(){
-	new WP_GitHub_Updater(__FILE__);
-});
-`
+` /* Include Composer */`
+
+`require(plugin_dir_path(__FILE__) . 'vendor/autoload.php');`
+
+`add_action('admin_init',function(){ new WP_GitHub_Updater(__FILE__); }); `
 
 ### Option 2 - Include as Class
 
@@ -29,14 +27,10 @@ Download this REPO
 
 Place the updater.php file somewhere within your plugin_dir_path and include the below in your plugins main php file
 
-`
-require('updater.php');
+` require('updater.php');`
 
-add_action('admin_init',function(){
-	new WP_GitHub_Updater(__FILE__);
-});
+`add_action('admin_init',function(){ new WP_GitHub_Updater(__FILE__); });`
 
-`
 
 ## Usage
 
