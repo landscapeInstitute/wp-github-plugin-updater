@@ -1,0 +1,20 @@
+{
+  "name": "landscapeinstitute/wp-github-plugin-updater",
+  "type": "library",
+  "description": "A simple GitHub Wordpress Plugin Updater which does not use the core updater framework",
+  "homepage": "https://github.com/landscapeInstitute/wp-github-plugin-updater",
+  "authors": [
+    {
+      "name": "Louis Varley",
+      "email": "louis.varley@landscapeinstitute.org",
+      "homepage": "https://www.landscapeinstitute.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "files": ["updater.php"],
+    "exclude-from-classmap": ["/.git", "/.githooks"]
+  }
+}
